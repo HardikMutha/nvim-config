@@ -13,3 +13,43 @@ lspconfig.tsserver.setup{
     }
   }
 }
+
+lspconfig.html.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options={
+    preferences = {
+      disableSuggestions = true,
+    }
+  }
+}
+
+lspconfig.tailwindcss.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options={
+    preferences={
+      disableSuggestions = true,
+    }
+  }
+}
+
+lspconfig.cssls.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
+    }
+  }
+}
+
+lspconfig.pylsp.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true
+    }
+  }
+}
