@@ -53,3 +53,13 @@ lspconfig.pylsp.setup{
     }
   }
 }
+
+lspconfig.java_language_server.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true
+    }
+  }
+}
