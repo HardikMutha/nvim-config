@@ -53,8 +53,38 @@ lspconfig.pylsp.setup{
     }
   }
 }
+--
+-- lspconfig.java_language_server.setup{
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   init_options = {
+--     preferences = {
+--       disableSuggestions = true
+--     }
+--   }
+-- }
+--
+lspconfig.jdtls.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true
+    }
+  }
+}
 
-lspconfig.java_language_server.setup{
+lspconfig.emmet_language_server.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true
+    }
+  }
+}
+
+lspconfig.ast_grep.setup{
   on_attach = on_attach,
   capabilities = capabilities,
   init_options = {
