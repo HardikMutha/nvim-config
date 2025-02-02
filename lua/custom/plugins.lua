@@ -12,7 +12,11 @@ local plugins = {
       ensure_installed={
         "eslint-lsp",
         "prettier",
-        "typescript-language-server"
+        "typescript-language-server",
+        "jdtls",
+        "python-lsp-server",
+        "tailwindcss-language-server",
+        "emmet-language-server"
       }
     }
   },
