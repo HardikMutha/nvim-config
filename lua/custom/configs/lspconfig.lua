@@ -46,6 +46,15 @@ lspconfig.cssls.setup{
 
 lspconfig.pylsp.setup{
   on_attach = on_attach,
+  settings = {
+    pylsp = {
+      plugins = {
+       pycodestyle = {
+          enabled = false,
+        } 
+      }
+    }
+  },
   capabilities = capabilities,
   init_options = {
     preferences = {
