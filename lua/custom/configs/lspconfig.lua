@@ -51,7 +51,7 @@ lspconfig.pylsp.setup{
       plugins = {
        pycodestyle = {
           enabled = false,
-        } 
+        }
       }
     }
   },
@@ -94,6 +94,16 @@ lspconfig.emmet_language_server.setup{
 }
 
 lspconfig.ast_grep.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true
+    }
+  }
+}
+
+lspconfig.clangd.setup{
   on_attach = on_attach,
   capabilities = capabilities,
   init_options = {
