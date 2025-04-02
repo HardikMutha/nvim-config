@@ -4,7 +4,7 @@ local capabilities = config.capabilities
 
 local lspconfig = require("lspconfig")
 
-lspconfig.tsserver.setup{
+lspconfig.ts_ls.setup{
   on_attach = on_attach,
   capabilities=capabilities,
   init_options={
@@ -51,6 +51,9 @@ lspconfig.pylsp.setup{
       plugins = {
        pycodestyle = {
           enabled = false,
+        },
+        pyflakes = {
+          enabled = true,
         }
       }
     }
