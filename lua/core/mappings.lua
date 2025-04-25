@@ -11,8 +11,8 @@ M.general = {
     -- navigate within insert mode
     ["<C-h>"] = { "<Left>", "Move left" },
     ["<C-l>"] = { "<Right>", "Move right" },
-    ["<C-j>"] = { "<Down>", "Move down" },
     ["<C-k>"] = { "<Up>", "Move up" },
+    ["<C-j>"] = { "<Down>", "Move down" },
   },
 
   n = {
@@ -26,6 +26,7 @@ M.general = {
     ["<A-Up>"] = {"<cmd> m-2 <CR>","Line Move Up"},
     ["<A-Down>"] = {"<cmd> m+1 <CR>","Line Move Down"},
 
+    ["<A-j>"] = {"yy p","Line Move Down"},
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
 

@@ -115,3 +115,13 @@ lspconfig.clangd.setup{
     }
   }
 }
+
+lspconfig.bashls.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options={
+    preferences={
+      disableSuggestions = true
+    }
+  }
+}

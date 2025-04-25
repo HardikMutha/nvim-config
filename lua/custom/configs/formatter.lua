@@ -6,6 +6,9 @@ local M = {
     typescript={
       require("formatter.filetypes.typescript").prettier
     },
+    ["*.tsx"]={
+      require("formatter.filetypes.typescript").prettier;
+    },
     ["*"]={
       require("formatter.filetypes.any").remove_trailing_witespace
     }
