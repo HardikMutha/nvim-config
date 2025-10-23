@@ -6,8 +6,14 @@ local M = {
     typescript={
       require("formatter.filetypes.typescript").prettier
     },
-    ["*.tsx"]={
-      require("formatter.filetypes.typescript").prettier;
+    javascriptreact={
+      require("formatter.filetypes.javascriptreact").prettier
+    },
+    typescriptreact={
+      require("formatter.filetypes.typescriptreact").prettier
+    },
+    ["*.cpp"]={
+      require("formatter.filetypes.cpp").clang
     },
     ["*"]={
       require("formatter.filetypes.any").remove_trailing_witespace
